@@ -1,0 +1,10 @@
+[user]
+	signingkey = 1DD282300A218890CA32F09B984D7D01FDF84AFB
+	email = Glenmerlin@protonmail.com
+	name = GlenMerlin
+[commit]
+	gpgsign = true
+[init]
+	defaultBranch = Main
+[credential]
+	helper = store
