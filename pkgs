@@ -11,8 +11,10 @@ alsa-firmware
 alsa-utils
 amd-ucode
 amdgpu-pro-libgl
+android-tools
 apparmor
 ascii-image-converter
+authy
 autoconf
 automake
 avahi
@@ -38,6 +40,7 @@ device-mapper
 dhclient
 dhcpcd
 diffutils
+discord_arch_electron
 dmidecode
 dmraid
 dnsmasq
@@ -47,7 +50,6 @@ downgrade
 e2fsprogs
 ecryptfs-utils
 efibootmgr
-element-desktop
 evince
 evolution-data-server
 exfat-utils
@@ -59,6 +61,7 @@ file-roller
 filesystem
 findutils
 firefox
+flat-remix-gnome
 flex
 fprintd
 gamemode
@@ -66,7 +69,6 @@ gawk
 gcc
 gcc-libs
 gdm-plymouth
-geary
 gedit
 gettext
 gimp
@@ -77,7 +79,6 @@ gnome-calculator
 gnome-calendar
 gnome-characters
 gnome-clocks
-gnome-connections
 gnome-contacts
 gnome-control-center
 gnome-desktop
@@ -99,7 +100,6 @@ gnome-system-log
 gnome-system-monitor
 gnome-terminal
 gnome-themes-extra
-gnome-todo
 gnome-tweaks
 gnome-user-docs
 gnome-user-share
@@ -139,6 +139,7 @@ intel-opencl-clang
 inxi
 iproute2
 iputils
+jdk-openjdk
 jfsutils
 jq
 kernel-alive
@@ -159,6 +160,8 @@ libva-mesa-driver
 libva-vdpau-driver
 licenses
 linux510
+linux514
+linux514-virtualbox-host-modules
 loginized
 logrotate
 lrzip
@@ -207,6 +210,7 @@ nautilus
 nautilus-admin
 nautilus-empty-file
 neofetch
+net-tools
 netctl
 networkmanager
 networkmanager-openconnect
@@ -228,6 +232,7 @@ ocl-icd
 opencl-amd
 opendoas
 opendoas-sudo
+openmw
 openresolv
 openrgb
 openssh
@@ -262,6 +267,7 @@ qt5-multimedia
 qt5-quickcontrols
 qt5-quickcontrols2
 qt5-translations
+qt5ct
 reiserfsprogs
 retroarch
 rsync
@@ -272,10 +278,10 @@ sed
 shadow
 signal-desktop
 simple-scan
-snapd
 snapd-glib
 spectre-meltdown-checker
 speedtest-cli
+spotify
 steam-manjaro
 sushi
 sysfsutils
@@ -285,14 +291,15 @@ systemd-sysvcompat
 tar
 tealdeer
 telegram-desktop
+termius-app
 texinfo
 thunderbird
 timeshift
 tlp
+todoist-appimage
 torbrowser-launcher
 tracker
 tracker-miners
-transmission-gtk
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
@@ -308,6 +315,7 @@ usbutils
 util-linux
 vi
 vino
+virtualbox
 visual-studio-code-bin
 vlc
 vulkan-intel
@@ -317,7 +325,6 @@ wallpapers-juhraya
 wget
 which
 wine-mono
-winetricks
 wpa_supplicant
 xdg-user-dirs
 xdg-user-dirs-gtk

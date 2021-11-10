@@ -69,6 +69,7 @@ echo "Installing Flatpaks"
 sudo flatpak install com.mojang.Minecraft
 sudo flatpak install com.obsproject.Studio
 sudo flatpak install me.okzec.syncthingtk
+sudo flatpak install im.riot.Riot
 
 # Clean out unused packages
 echo "==> Cleaning up"
