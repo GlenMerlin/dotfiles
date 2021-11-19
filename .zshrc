@@ -1,4 +1,4 @@
-# Use powerline
+#Use powerline
 USE_POWERLINE="false"
 # Source manjaro-zsh-configuration
 if [[ -e /usr/share/zsh/manjaro-zsh-config ]]; then

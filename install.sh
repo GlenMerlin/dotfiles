@@ -54,15 +54,6 @@ cp 'standard-notes-3.8.21-linux-x86_64.AppImage' ~/Applications/Standard-Notes.A
 chmod +x ~/Applications/Bitwarden.AppImage
 chmod +x ~/Applications/Standard-Notes.AppImage
 
-# Install Snaps
-echo "==> Yes, I use snaps. No, I'm not proud of it."
-echo "==> Installing snaps"
-sudo snap install authy
-sudo snap install spotify
-sudo snap install termius-app
-sudo snap install todoist
-sudo snap refresh
-
 # Install Flatpaks
 echo "==> Same thing can be said for Flatpaks"
 echo "Installing Flatpaks"

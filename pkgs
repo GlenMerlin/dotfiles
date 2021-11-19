@@ -261,7 +261,6 @@ pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-zeroconf
 python-grip
-qemu
 qgnomeplatform
 qt5-multimedia
 qt5-quickcontrols
