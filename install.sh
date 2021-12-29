@@ -32,7 +32,7 @@ makepkg -si
 
 # Install all my packages
 echo "==> Starting package install (This may take a while)"
-paru -S < pkgs --noconfirm
+paru -S - < pkgs --noconfirm
 
 # Set up folder for .AppImages
 echo "==> If you're reading this congrats nothing broke yet"
@@ -55,8 +55,7 @@ chmod +x ~/Applications/Bitwarden.AppImage
 chmod +x ~/Applications/Standard-Notes.AppImage
 
 # Install Flatpaks
-echo "==> Same thing can be said for Flatpaks"
-echo "Installing Flatpaks"
+echo "==> Installing Flatpaks"
 sudo flatpak install com.mojang.Minecraft
 sudo flatpak install com.obsproject.Studio
 sudo flatpak install me.okzec.syncthingtk
@@ -65,6 +64,11 @@ sudo flatpak install im.riot.Riot
 # Clean out unused packages
 echo "==> Cleaning up"
 paru --clean --noconfirm
+
+# Fix Emoji Issues with Manjaro
+echo "==> Fixing Emoji Issues"
+paru -S noto-fonts-emoji
+sudo ln -s $PWD/local.conf /etc/fonts/local.conf
 
 # Echo Manual Setup instructions
 echo "Don't forget to update standard notes"
