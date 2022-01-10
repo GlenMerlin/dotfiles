@@ -53,6 +53,7 @@ cp 'index.html?app=desktop&platform=linux' ~/Applications/Bitwarden.AppImage
 cp 'standard-notes-3.8.21-linux-x86_64.AppImage' ~/Applications/Standard-Notes.AppImage
 chmod +x ~/Applications/Bitwarden.AppImage
 chmod +x ~/Applications/Standard-Notes.AppImage
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 # Install Flatpaks
 echo "==> Installing Flatpaks"
@@ -60,6 +61,7 @@ sudo flatpak install com.mojang.Minecraft
 sudo flatpak install com.obsproject.Studio
 sudo flatpak install me.okzec.syncthingtk
 sudo flatpak install im.riot.Riot
+sudo flatpak install org.signal.Signal
 
 # Clean out unused packages
 echo "==> Cleaning up"
