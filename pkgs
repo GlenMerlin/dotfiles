@@ -38,11 +38,11 @@ device-mapper
 dhclient
 dhcpcd
 diffutils
-discord
 dmidecode
 dmraid
 dnsmasq
 docker
+docker-compose
 dolphin-emu
 dosfstools
 downgrade
@@ -176,7 +176,6 @@ manjaro-alsa
 manjaro-application-utility
 manjaro-artwork
 manjaro-aur-support
-manjaro-browser-settings
 manjaro-documentation-en
 manjaro-dynamic-wallpaper
 manjaro-firmware
@@ -303,6 +302,7 @@ unace
 unrar
 usb_modeswitch
 usbutils
+valgrind
 vi
 vino
 virtualbox
