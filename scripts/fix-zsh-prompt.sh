@@ -5,6 +5,7 @@ echo "==> This script requires root privledges to run. Make sure to run it as ro
 echo "==> Placing zsh configs in proper locations"
 sudo rm /usr/share/zsh/manjaro-zsh-config
 sudo rm /usr/share/zsh/manjaro-zsh-prompt
+cd ../configs/zsh
 sudo ln -s $PWD/manjaro-zsh-config /usr/share/zsh/manjaro-zsh-config
 sudo ln -s $PWD/manjaro-zsh-prompt /usr/share/zsh/manjaro-zsh-prompt
 

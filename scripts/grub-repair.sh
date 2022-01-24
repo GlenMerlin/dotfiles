@@ -8,8 +8,10 @@ while true; do
         manjaro-chroot -a 
         grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=manjaro --recheck --no-rs-codes --verbose
         exit
-        reboot
+        ;;
     [No]* )
         echo "canceling..."
+        ;;
+        *) echo "Answer either a yes or no!";;
     esac
 done

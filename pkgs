@@ -316,6 +316,7 @@ wget
 which
 wine-mono
 wpa_supplicant
+xdg-desktop-portal-wlr
 xdg-user-dirs
 xdg-user-dirs-gtk
 xdg-utils
@@ -338,4 +339,3 @@ yarn
 yay
 yelp
 youtube-dl
-zoom

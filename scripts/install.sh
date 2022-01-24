@@ -1,21 +1,26 @@
 #!/bin/sh
 
+cd ../configs
 # Place config and prompt in proper locations
 echo "==> Placing zsh configs in proper locations"
 sudo rm /usr/share/zsh/manjaro-zsh-config
 sudo rm /usr/share/zsh/manjaro-zsh-prompt
+cd zsh
 sudo ln -s $PWD/manjaro-zsh-config /usr/share/zsh/manjaro-zsh-config
 sudo ln -s $PWD/manjaro-zsh-prompt /usr/share/zsh/manjaro-zsh-prompt
 
 # Place .gitconfig and .zshrc in the home directory
+
 echo "==> Placing gitconfig and zshrc in the home directory"
-ln -s $PWD/.gitconfig ~/.gitconfig
 rm ~/.zshrc
 ln -s $PWD/.zshrc ~/.zshrc
+cd ../git
+ln -s $PWD/.gitconfig ~/.gitconfig
 
 # Place pacman.conf in /etc
 echo "==> Placing pacman.conf in the proper location"
 sudo rm /etc/pacman.conf
+cd ../pacman
 sudo ln -s $PWD/pacman.conf /etc/pacman.conf
 sudo cp update-pkg-list.hook /usr/share/libalpm/hooks/update-pkg-list.hook
 
@@ -25,6 +30,7 @@ sudo pacman-mirrors --fasttrack && sudo pacman -Syyu --noconfirm
 
 # Install paru
 echo "==> Installing paru"
+cd ../..
 sudo pacman -S --needed base-devel
 git clone https://aur.archlinux.org/paru.git
 cd paru
@@ -32,6 +38,7 @@ makepkg -si
 
 # Install all my packages
 echo "==> Starting package install (This may take a while)"
+cd ../
 paru -S - < pkgs --noconfirm
 
 # Set up folder for .AppImages
@@ -54,6 +61,7 @@ cp 'standard-notes-3.8.21-linux-x86_64.AppImage' ~/Applications/Standard-Notes.A
 chmod +x ~/Applications/Bitwarden.AppImage
 chmod +x ~/Applications/Standard-Notes.AppImage
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
 # Install Flatpaks
 echo "==> Installing Flatpaks"
@@ -70,6 +78,7 @@ paru --clean --noconfirm
 # Fix Emoji Issues with Manjaro
 echo "==> Fixing Emoji Issues"
 paru -S noto-fonts-emoji
+cd configs/fonts
 sudo ln -s $PWD/local.conf /etc/fonts/local.conf
 
 # Echo Manual Setup instructions
