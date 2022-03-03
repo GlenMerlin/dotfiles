@@ -8,6 +8,7 @@ sudo rm /usr/share/zsh/manjaro-zsh-prompt
 cd zsh
 sudo ln -s $PWD/manjaro-zsh-config /usr/share/zsh/manjaro-zsh-config
 sudo ln -s $PWD/manjaro-zsh-prompt /usr/share/zsh/manjaro-zsh-prompt
+sudo on -s $PWD/zsh-maia-prompt /usr/share/zsh/zsh-maia-prompt
 
 # Place .gitconfig and .zshrc in the home directory
 
@@ -17,16 +18,9 @@ ln -s $PWD/.zshrc ~/.zshrc
 cd ../git
 ln -s $PWD/.gitconfig ~/.gitconfig
 
-# Place pacman.conf in /etc
-echo "==> Placing pacman.conf in the proper location"
-sudo rm /etc/pacman.conf
-cd ../pacman
-sudo ln -s $PWD/pacman.conf /etc/pacman.conf
-sudo cp update-pkg-list.hook /usr/share/libalpm/hooks/update-pkg-list.hook
-
 # Set default mirrorlist for pacman
 echo "==> Updating mirror list for updates and installations"
-sudo pacman-mirrors --fasttrack && sudo pacman -Syyu --noconfirm
+sudo pacman-mirrors --fasttrack
 
 # Install paru
 echo "==> Installing paru"
@@ -40,6 +34,21 @@ makepkg -si
 echo "==> Starting package install (This may take a while)"
 cd ../
 paru -S - < pkgs --noconfirm
+
+# Place pacman.conf in /etc
+echo "==> Placing pacman.conf in the proper location"
+sudo rm /etc/pacman.conf
+cd ../pacman
+sudo ln -s $PWD/pacman.conf /etc/pacman.conf
+sudo cp update-pkg-list.hook /usr/share/libalpm/hooks/update-pkg-list.hook
+
+# Install Flatpaks
+echo "==> Installing Flatpaks"
+sudo flatpak install com.mojang.Minecraft
+sudo flatpak install com.obsproject.Studio
+sudo flatpak install me.okzec.syncthingtk
+sudo flatpak install im.riot.Riot
+sudo flatpak install org.signal.Signal
 
 # Set up folder for .AppImages
 echo "==> If you're reading this congrats nothing broke yet"
@@ -63,13 +72,6 @@ chmod +x ~/Applications/Standard-Notes.AppImage
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
 
-# Install Flatpaks
-echo "==> Installing Flatpaks"
-sudo flatpak install com.mojang.Minecraft
-sudo flatpak install com.obsproject.Studio
-sudo flatpak install me.okzec.syncthingtk
-sudo flatpak install im.riot.Riot
-sudo flatpak install org.signal.Signal
 
 # Clean out unused packages
 echo "==> Cleaning up"
