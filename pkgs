@@ -14,6 +14,7 @@ amdgpu-pro-libgl
 android-tools
 apparmor
 appimagelauncher
+audacity
 authy
 autoconf
 automake
@@ -37,7 +38,7 @@ device-mapper
 dhclient
 dhcpcd
 diffutils
-discord-canary
+discord_arch_electron
 dmidecode
 dmraid
 dnsmasq
@@ -71,6 +72,7 @@ gimp
 glibc-locales
 gnome-backgrounds
 gnome-boxes
+gnome-browser-connector
 gnome-calculator
 gnome-calendar
 gnome-characters
@@ -89,6 +91,7 @@ gnome-screenshot
 gnome-session
 gnome-settings-daemon
 gnome-shell
+gnome-shell-extension-dash-to-dock
 gnome-shell-extension-gnome-ui-tune
 gnome-shell-extension-gsconnect
 gnome-shell-extension-nightthemeswitcher
@@ -97,6 +100,7 @@ gnome-shell-extensions
 gnome-system-log
 gnome-system-monitor
 gnome-terminal
+gnome-text-editor
 gnome-themes-extra
 gnome-todo
 gnome-tweaks
@@ -141,11 +145,10 @@ iputils
 jdk-openjdk
 jdk11-openjdk
 jfsutils
-joycond-git
 jq
-jre8-openjdk
 kernel-alive
 keybase-gui
+kvantum
 less
 lib32-gnutls
 lib32-libva-vdpau-driver
@@ -166,12 +169,9 @@ licenses
 linux515
 linux515-r8168
 linux515-virtualbox-host-modules
-linux516
-linux516-r8168
-linux516-virtualbox-host-modules
-linux517
-linux517-r8168
-linux517-virtualbox-host-modules
+linux518
+linux518-r8168
+linux518-virtualbox-host-modules
 loginized
 logmein-hamachi
 logrotate
@@ -189,10 +189,7 @@ manjaro-aur-support
 manjaro-documentation-en
 manjaro-dynamic-wallpaper
 manjaro-firmware
-manjaro-gdm-theme
-manjaro-gnome-assets
 manjaro-gnome-postinstall
-manjaro-gnome-tour
 manjaro-hotfixes
 manjaro-log-helper
 manjaro-pipewire
@@ -217,7 +214,6 @@ modemmanager
 mono
 mono-msbuild
 mousetweaks
-multimc5
 mutter
 nano
 nano-syntax-highlighting
@@ -239,6 +235,7 @@ noisetorch
 noto-fonts
 noto-fonts-compat
 npm
+npm-check-updates
 nss-mdns
 ntfs-3g
 ntp
@@ -267,14 +264,14 @@ pipewire-zeroconf
 pkgconf
 plymouth-theme-manjaro
 polkit-gnome
+polymc-bin
 pop-fonts
 poppler-data
-postman-bin
 powertop
 protonmail-bridge
 protonvpn
 python-pip
-qgnomeplatform
+qgnomeplatform-qt5
 qt5-multimedia
 qt5-quickcontrols
 qt5-quickcontrols2
@@ -282,7 +279,6 @@ qt5-translations
 qt5ct
 radeontop
 reiserfsprogs
-retroarch
 rsync
 rygel
 s-nail
@@ -300,6 +296,7 @@ sysfsutils
 systemd
 systemd-fsck-silent
 systemd-sysvcompat
+tailscale
 tealdeer
 telegram-desktop
 termius-app
@@ -321,15 +318,14 @@ ttf-ms-fonts
 ttf-roboto
 ttf-roboto-mono
 unace
-unityhub
 uno-calculator-bin
 unrar
 usb_modeswitch
 usbutils
 valgrind
 vi
+vim
 vino
-virtualbox
 visual-studio-code-bin
 vlc
 vulkan-intel
@@ -363,3 +359,4 @@ xorg-xinit
 yay
 yelp
 youtube-dl
+zoom
