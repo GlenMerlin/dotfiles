@@ -29,6 +29,8 @@ sudo pacman -S --needed base-devel --noconfirm
 git clone https://aur.archlinux.org/paru.git
 cd paru
 makepkg -si
+cd ../scripts
+/bin/sh fix-paru.sh
 
 # Install all my packages
 echo "==> Starting package install (This may take a while)"
