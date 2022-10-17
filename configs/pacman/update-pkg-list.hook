@@ -6,4 +6,4 @@ Target = *
 
 [Action]
 When = PostTransaction
-Exec = /bin/sh -c '/usr/bin/pacman -Qqe > /home/glenmerlin/Projects/dotfiles/pkgs'
+Exec = /bin/sh -c '/usr/bin/paru -Qqe > /home/glenmerlin/Projects/dotfiles/pkgs'

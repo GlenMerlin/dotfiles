@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Bitwarden
-Comment=Password Manager
-GenericName=Password Manager
-Exec=/home/glenmerlin/Applications/Bitwarden.AppImage
-Icon=/usr/share/icons/Papirus-Dark/16x16/categories/appimagekit-bitwarden.svg
-Type=Application
-StartupNotify=true
-MimeType=application/appimagekit-bitwarden

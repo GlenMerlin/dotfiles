@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Standard Notes
-Comment=Encrypted Notes
-GenericName=Note Taking App
-Exec=/home/glenmerlin/Applications/Standard-Notes.AppImage
-Icon=/usr/share/icons/Papirus-Dark/16x16/categories/standard-notes.svg
-Type=Application
-StartupNotify=true
-MimeType=application/appimagekit-standard-notes
