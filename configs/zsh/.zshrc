@@ -7,6 +7,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export HISTFILE=~/.zhistory
 export SAVEHIST=1000
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH/usr/lib
 case "${TERM}" in
   cons25*|linux) # plain BSD/Linux console
     bindkey '\e[H'    beginning-of-line   # home 

@@ -1,6 +1,7 @@
 accountsservice
 acpi
 acpid
+acpilight
 adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
@@ -60,6 +61,7 @@ e2fsprogs
 ecryptfs-utils
 efibootmgr
 efitools
+endeavour
 endeavouros-keyring
 endeavouros-mirrorlist
 endeavouros-theming
@@ -95,9 +97,11 @@ gdb
 gdm
 gedit
 gettext
+ghex
 gimp
 git
 glances
+globalprotect-openconnect
 gnome-backgrounds
 gnome-boxes
 gnome-browser-connector
@@ -105,6 +109,7 @@ gnome-calculator
 gnome-calendar
 gnome-characters
 gnome-clocks
+gnome-connections
 gnome-contacts
 gnome-control-center
 gnome-disk-utility
@@ -122,7 +127,6 @@ gnome-system-monitor
 gnome-terminal
 gnome-text-editor
 gnome-themes-extra
-gnome-todo
 gnome-tweaks
 gnome-usage
 gnome-user-docs
@@ -135,7 +139,6 @@ grilo-plugins
 groff
 grub
 grub-btrfs
-grub2-theme-endeavouros
 gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
@@ -238,6 +241,7 @@ networkmanager-openconnect
 networkmanager-openvpn
 networkmanager-pptp
 networkmanager-vpnc
+nextcloud-client
 nfs-utils
 nilfs-utils
 nmap
@@ -253,6 +257,7 @@ ocl-icd
 openconnect
 opendoas
 openmw
+openssl-1.1
 openvpn
 os-prober
 p7zip
@@ -322,11 +327,11 @@ termius
 testdisk
 texinfo
 thunderbird
+tk
 tldr
 tlp
 torbrowser-launcher
-tracker
-tracker-miners
+tree
 ttf-bitstream-vera
 ttf-dejavu
 ttf-droid
@@ -347,7 +352,6 @@ usbutils
 valgrind
 vi
 vim
-vino
 visual-studio-code-bin
 vlc
 vmware-workstation
@@ -390,7 +394,7 @@ xorg-xinput
 xorg-xkill
 xorg-xrandr
 xsane
-yad-eos
+yad
 yay
 yelp
 youtube-dl
