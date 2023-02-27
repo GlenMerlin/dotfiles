@@ -61,6 +61,7 @@ e2fsprogs
 ecryptfs-utils
 efibootmgr
 efitools
+elfutils
 endeavour
 endeavouros-keyring
 endeavouros-mirrorlist
@@ -256,7 +257,6 @@ numlockx
 ocl-icd
 openconnect
 opendoas
-openmw
 openssl-1.1
 openvpn
 os-prober
