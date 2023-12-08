@@ -1,12 +1,20 @@
 autoload -U colors && colors
 echo $USER@$HOST on EndeavourOS Linux $(date)
 setopt prompt_subst
+setopt autocd
+setopt interactivecomments
+setopt magicequalsubst
+setopt nonomatch
+setopt notify
+setopt numericglobsort
+setopt promptsubst
 PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b "
 RPROMPT="%{$fg[red]%} %(?..[%?])" 
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export HISTFILE=~/.zhistory
 export SAVEHIST=1000
+
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH/usr/lib
 case "${TERM}" in
   cons25*|linux) # plain BSD/Linux console
