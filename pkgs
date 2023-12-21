@@ -33,6 +33,7 @@ btrfs-progs
 btrfsmaintenance
 caffeine-ng
 cantarell-fonts
+chromium
 cpupower
 cronie
 cryptsetup
@@ -46,7 +47,6 @@ dhclient
 dhcpcd
 dialog
 diffutils
-discord
 discord-canary
 dmidecode
 dmraid
@@ -301,6 +301,7 @@ python-capng
 python-defusedxml
 python-dotenv
 python-mysql-connector
+python-nautilus
 python-packaging
 python-pip
 python-pyqt5

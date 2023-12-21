@@ -8,8 +8,11 @@ setopt nonomatch
 setopt notify
 setopt numericglobsort
 setopt promptsubst
+
 PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan]%}.%{$fg[red]%})>%{$reset_color%}%b "
 RPROMPT="%{$fg[red]%} %(?..[%?])" 
+
+alias update="paru && flatpak update"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 export HISTFILE=~/.zhistory
