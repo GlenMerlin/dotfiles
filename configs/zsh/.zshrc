@@ -13,9 +13,9 @@ PROMPT="%B%{$fg[cyan]%}%(4~|%-1~/.../%2~|%~)%u%b >%{$fg[cyan]%}>%B%(?.%{$fg[cyan
 RPROMPT="%{$fg[red]%} %(?..[%?])" 
 
 alias update="paru && flatpak update"
+alias ls="ls --color=tty"
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-export HISTFILE=~/.zhistory
+
 export SAVEHIST=1000
 
 LD_LIBRARY_PATH=$LD_LIBRARY_PATH/usr/lib
@@ -57,3 +57,4 @@ case "${TERM}" in
     bindkey '^[[1;5D' backward-word       # ctrl left
     ;;
 esac
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

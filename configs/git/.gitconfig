@@ -1,6 +1,6 @@
 [user]
-	signingkey = 7502166DD87A7B4AABF619FC60E029E5D5B9149C
-	email = Glenmerlin@protonmail.com
+	signingkey = 405D9803401EB0DAEEAA7749DCD556350E7E4BF9
+	email = glenmerlin@glenmerlin.me
 	name = GlenMerlin
 [commit]
 	gpgsign = true

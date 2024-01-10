@@ -2,7 +2,7 @@
 cd ../
 # Install all my packages
 echo "==> Starting package install (This may take a while)"
-paru -S - < pkgs --noconfirm
+paru -S - < pkgs
 
 # Install Flatpaks
 echo "==> Installing Flatpaks"
